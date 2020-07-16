@@ -1,25 +1,4 @@
-// let options = {
-//   root: null,
-//   rootMargin: '0px',
-//   threshold: 1.0
-// }
-
-// let observer = new IntersectionObserver((entries, observer) => {
-// 	entries.forEach(entry => {
-// 		if (entry.isIntersecting) {
-// 			console.log(entry)
-// 			entry.style.opacity = '1';
-// 			observer.unobserve(entry.target)
-// 		}
-// 	})
-// 	}, options);
-
-// let target = document.querySelector('.about__body');
-
-// observer.observe(target);
-
-
-
+//-------- the following is for the navigation -----------
 // four main sections of web page
 const sections = document.querySelectorAll('section.section');
 const config = {
@@ -65,14 +44,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+//-------- the following is for elements fading into view -------
+
 // intersection oberserver home screen
 const homePage = document.querySelectorAll('.first-fade');
 const largeScreenNav= document.querySelectorAll('.second-fade');
-// const homePageLink = document.querySelector('.home-page__link');
-// const navigationLeft = document.querySelector('large-screen-nav__orientation-left');
-// const navigationTopRight = document.querySelector('large-screen-nav__orientation-top-right');
-// const navigationBottomRight = document.querySelector('large-screen-nav__orientation-bottom-right');
 
+
+// for elements fading up
 let observerFadeUp = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -82,6 +62,7 @@ let observerFadeUp = new IntersectionObserver(function (entries, observer) {
     });
 });
 
+// for elements that will just fade
 let observerFade = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -91,6 +72,7 @@ let observerFade = new IntersectionObserver(function (entries, observer) {
     });
 });
 
+//use the index argument to extend the timeout for each element (forEach is a synchronous function)
 homePage.forEach((element, index) => {
   setTimeout(() => observerFadeUp.observe(element), 300 * index)
 }); 
