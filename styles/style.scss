@@ -1,5 +1,6 @@
 
 //Variables
+$primary-color: #DCD8E8;
 $secondary-color: #7C6EA9;
 $third-color: #61899A;
 $breakpoint-laptop: 1000px;
@@ -10,7 +11,7 @@ $breakpoint-laptop: 1000px;
 	margin: 0;
 	font-weight: normal;
 	box-sizing: border-box;
-	color: #DCD8E8;
+	color: $primary-color;
 	font-family:  'Playfair Display', 'Times New Roman', serif,;
 
 }
@@ -231,16 +232,18 @@ a {
 	&__link {
 		border-radius: 20px;
 		font-size: 18px;
-		border: solid 1.5px;
+		border: solid 1px;
 		padding: 1em 2em;
 		text-align: center;
-		background: #050014;
-		border-color: $third-color;
-		color: $third-color;
-		transition: all 0.2s ease;
+		background: inherit;
+		border-color: $secondary-color;
+		color: $secondary-color;
+		transition: all 0.3s ease;
 
 		&:hover {
-			background: #61899A50;
+			background: #7C6EA940;
+			border-color: #7C6EA940;
+			color: $primary-color;
 		}
 	}
 }
@@ -339,10 +342,21 @@ a {
 		display: flex;
 		justify-content: space-between;
 	}
+
+
 	&__icon {
 		width: 28px;
 		height: 28px;
 		margin-right: 1em;
+
+		&:hover .work__svg-path {
+			fill: $secondary-color;	
+
+		}
+	}
+
+	&__svg-path {
+		transition: fill 0.1s ease-in;
 	}
 
 	&__application-title, &__project-title {

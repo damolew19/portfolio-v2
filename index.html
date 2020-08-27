@@ -16,8 +16,8 @@
 			<nav class='large-screen-nav__nav'>
 				<ul class='large-screen-nav__list'>
 					<li class='large-screen-nav__list-item'><a class='large-screen-nav__link' data-ref='home-screen' href='#home-screen'>H<br>O<br>M<br>E</a></li>
-					<li class='large-screen-nav__list-item'><a class='large-screen-nav__link' data-ref='about-screen' href='#about-screen'>A<br>B<br>O<br>U<br>T</a></li>
 					<li class='large-screen-nav__list-item'><a class='large-screen-nav__link'  data-ref='work-screen' href='#work-screen'>W<br>O<br>R<br>K</a></li>
+					<li class='large-screen-nav__list-item'><a class='large-screen-nav__link' data-ref='about-screen' href='#about-screen'>A<br>B<br>O<br>U<br>T</a></li>
 					<li class='large-screen-nav__list-item'><a class='large-screen-nav__link' data-ref='contact-screen' href='#contact-screen'>C<br>O<br>N<br>T<br>A<br>C<br>T</a></li>
 				</ul>
 			</nav>
@@ -37,47 +37,14 @@
 	</div>
 
 	<main>
-
-		<section id='home-screen' class='home-page section'>
+	<section id='home-screen' class='home-page section'>
 			<h1 class='home-page__title home-page--mainTitle first-fade'>Hi, I am Damien.<br><span class='home-page--subHeading home-page--secondaryColor'>I like to build things for the web.</span></h1>
 			<p class='home-page__content first-fade'>I am self-taught developer based in Melbourne, who specializes in developing and designing website.</p>
 			<div class='home-page__link-wrapper first-fade'>
-				<a class='home-page__link' href='mailto:d.lewinski95@gmail.com'>Get in Touch</a>
+				<a class='home-page__link' href='#work-screen'>My Projects</a>
 			</div>
 		</section>
 
-		<section id='about-screen' class='about section'>
-			<div class='about__titleContainer'>
-				<h2 class='about__title section-heading'>Background</h2>
-			</div>
-			<div class='about__body first-fade'>
-				<div class='about__content'>
-					<p class='about__text'>Hello! I am Damien Lewinski, a front-end developer based in Melbourne.<br><br>I enjoy creating websites and applications that live on the web. My goal as a developer is to build attractive and performant products.<br><br> I recently Graduated from <span class='secondary-color'>Monash University</span> where I studied applied mathematics. Being a developer is the optimal lifestyle for me as I have always found enjoyment for problem solving activities and creating things.
-					<br><br>Outside of developing, you will probably find me performing/compusing music, cooking something up in the kitchen or running in mountains with my dog.</p>
-					<br>
-					<h3 class='about__skills'>Here are my Skills:</h3>
-					<br>
-					<div class='about__listContainer'>
-						<ul class='about_list'>
-							<li class='about__item'>JavaScript (ES6+)</li>
-							<li class='about__item'>HTML & (S)CSS</li>
-							<li class='about__item'>React</li>
-							<li class='about__item'>Figma</li>
-						</ul>
-						<ul class='about_list'>
-							<li class='about__item'>DOM Manipulation</li>
-							<li class='about__item'>Git</li>
-							<li class='about__item'>Chrome Dev Tools</li>
-							<li class='about__item'>Bash</li>
-						</ul>
-					</div>
-				</div>
-				<div class='about__imageContainer'>
-					<img class='about__image' src='./images/me.jpg' alt='photo of Damien Lewinski'/>
-					<div class='about__overlay'></div>
-				</div>
-			</div>
-		</section>
 
 		<section id='work-screen' class='work section'>
 			<div class='work__titleContainer'>
@@ -93,8 +60,17 @@
 				<div class='work__body'>
 					<div class='work__header'>
 						<div>
-							<a href='https://github.com/damolew19/dtn' target='_blank'><img class='work__icon' src='./images/gitHubIcon.png' alt='GitHub Icon'/></a>
-							<a href='https://damolew19.github.io/dtn' target='_blank'><img class='work__icon' src='./images/external-link.png' alt='External Link Icon'/></a>
+							<a class='work__icon-container' href='https://github.com/damolew19/dtn' target='_blank'>
+								<svg class='work__icon' width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class='work__svg-path' fill-rule="evenodd" clip-rule="evenodd" d="M22.4776 0.254117C10.4843 0.254117 0.760254 9.97812 0.760254 21.9741C0.760254 31.5701 6.98292 39.7101 15.6136 42.5834C16.7003 42.7821 17.0963 42.1114 17.0963 41.5354C17.0963 41.0208 17.0776 39.6541 17.0669 37.8421C11.0256 39.1541 9.75092 34.9301 9.75092 34.9301C8.76292 32.4208 7.33892 31.7528 7.33892 31.7528C5.36692 30.4061 7.48825 30.4328 7.48825 30.4328C9.66825 30.5861 10.8149 32.6714 10.8149 32.6714C12.7523 35.9901 15.8989 35.0314 17.1363 34.4754C17.3336 33.0728 17.8936 32.1154 18.5149 31.5728C13.6923 31.0248 8.62159 29.1608 8.62159 20.8381C8.62159 18.4674 9.46825 16.5288 10.8576 15.0101C10.6336 14.4608 9.88825 12.2528 11.0696 9.26212C11.0696 9.26212 12.8936 8.67812 17.0429 11.4888C18.7749 11.0061 20.6336 10.7661 22.4803 10.7581C24.3243 10.7661 26.1829 11.0061 27.9176 11.4888C32.0643 8.67812 33.8843 9.26212 33.8843 9.26212C35.0696 12.2528 34.3243 14.4608 34.1003 15.0101C35.4923 16.5288 36.3336 18.4674 36.3336 20.8381C36.3336 29.1821 31.2549 31.0181 26.4163 31.5554C27.1963 32.2261 27.8909 33.5514 27.8909 35.5781C27.8909 38.4808 27.8643 40.8234 27.8643 41.5354C27.8643 42.1168 28.2549 42.7928 29.3576 42.5808C37.9816 39.7021 44.1989 31.5675 44.1989 21.9741C44.1989 9.97812 34.4736 0.254117 22.4776 0.254117Z" fill="white"/>
+								</svg>
+							</a>
+
+							<a class='work__icon-continer' href='https://damolew19.github.io/dtn' target='_blank'>
+								<svg class='work__icon' fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45px" height="45px">
+									<path class='work__svg-path' fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M 33.40625 0 C 32.855469 0.0507813 32.449219 0.542969 32.5 1.09375 C 32.550781 1.644531 33.042969 2.050781 33.59375 2 L 46.5625 2 L 25.6875 22.90625 C 25.390625 23.148438 25.253906 23.535156 25.339844 23.910156 C 25.425781 24.28125 25.71875 24.574219 26.089844 24.660156 C 26.464844 24.746094 26.851563 24.609375 27.09375 24.3125 L 48 3.4375 L 48 16.40625 C 47.996094 16.765625 48.183594 17.101563 48.496094 17.285156 C 48.808594 17.464844 49.191406 17.464844 49.503906 17.285156 C 49.816406 17.101563 50.003906 16.765625 50 16.40625 L 50 0 L 33.59375 0 C 33.5625 0 33.53125 0 33.5 0 C 33.46875 0 33.4375 0 33.40625 0 Z M 2 10 C 1.476563 10 0.941406 10.183594 0.5625 10.5625 C 0.183594 10.941406 0 11.476563 0 12 L 0 48 C 0 48.523438 0.183594 49.058594 0.5625 49.4375 C 0.941406 49.816406 1.476563 50 2 50 L 38 50 C 38.523438 50 39.058594 49.816406 39.4375 49.4375 C 39.816406 49.058594 40 48.523438 40 48 L 40 18 C 40.003906 17.640625 39.816406 17.304688 39.503906 17.121094 C 39.191406 16.941406 38.808594 16.941406 38.496094 17.121094 C 38.183594 17.304688 37.996094 17.640625 38 18 L 38 48 L 2 48 L 2 12 L 32 12 C 32.359375 12.003906 32.695313 11.816406 32.878906 11.503906 C 33.058594 11.191406 33.058594 10.808594 32.878906 10.496094 C 32.695313 10.183594 32.359375 9.996094 32 10 Z"/>
+								</svg>
+							</a>
 						</div>
 						<div>
 							<h4 class='work__application-title'>Web Application</h4>
@@ -105,7 +81,7 @@
 					<ul class='work__list'>
 						<li class='work__skill'>React</li>
 						<li class='work__skill'>Figma</li>
-						<li class='work__skill'>SPA</li>
+						<li class='work__skill'>Responsive Web Design</li>
 					</ul>
 				</div>
 			</div>
@@ -120,20 +96,60 @@
 				<div class='work__body'>
 					<div class='work__header'>
 						<div>
-							<a href='https://github.com/damolew19/home-page/tree/master' target='_blank'><img class='work__icon' src='./images/gitHubIcon.png' alt='GitHub Icon'/></a>
-							<a href='https://damolew19.github.io/home-page/' target='_blank'><img class='work__icon' src='./images/external-link.png' alt='External Link Icon'/></a>
+							<a href='https://github.com/damolew19/home-page/tree/master' target='_blank'>
+								<svg class='work__icon' width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class='work__svg-path' fill-rule="evenodd" clip-rule="evenodd" d="M22.4776 0.254117C10.4843 0.254117 0.760254 9.97812 0.760254 21.9741C0.760254 31.5701 6.98292 39.7101 15.6136 42.5834C16.7003 42.7821 17.0963 42.1114 17.0963 41.5354C17.0963 41.0208 17.0776 39.6541 17.0669 37.8421C11.0256 39.1541 9.75092 34.9301 9.75092 34.9301C8.76292 32.4208 7.33892 31.7528 7.33892 31.7528C5.36692 30.4061 7.48825 30.4328 7.48825 30.4328C9.66825 30.5861 10.8149 32.6714 10.8149 32.6714C12.7523 35.9901 15.8989 35.0314 17.1363 34.4754C17.3336 33.0728 17.8936 32.1154 18.5149 31.5728C13.6923 31.0248 8.62159 29.1608 8.62159 20.8381C8.62159 18.4674 9.46825 16.5288 10.8576 15.0101C10.6336 14.4608 9.88825 12.2528 11.0696 9.26212C11.0696 9.26212 12.8936 8.67812 17.0429 11.4888C18.7749 11.0061 20.6336 10.7661 22.4803 10.7581C24.3243 10.7661 26.1829 11.0061 27.9176 11.4888C32.0643 8.67812 33.8843 9.26212 33.8843 9.26212C35.0696 12.2528 34.3243 14.4608 34.1003 15.0101C35.4923 16.5288 36.3336 18.4674 36.3336 20.8381C36.3336 29.1821 31.2549 31.0181 26.4163 31.5554C27.1963 32.2261 27.8909 33.5514 27.8909 35.5781C27.8909 38.4808 27.8643 40.8234 27.8643 41.5354C27.8643 42.1168 28.2549 42.7928 29.3576 42.5808C37.9816 39.7021 44.1989 31.5675 44.1989 21.9741C44.1989 9.97812 34.4736 0.254117 22.4776 0.254117Z" fill="white"/>
+								</svg>
+							</a>
+							<a href='https://damolew19.github.io/home-page/' target='_blank'>
+								<svg class='work__icon' fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45px" height="45px">
+									<path class='work__svg-path' fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M 33.40625 0 C 32.855469 0.0507813 32.449219 0.542969 32.5 1.09375 C 32.550781 1.644531 33.042969 2.050781 33.59375 2 L 46.5625 2 L 25.6875 22.90625 C 25.390625 23.148438 25.253906 23.535156 25.339844 23.910156 C 25.425781 24.28125 25.71875 24.574219 26.089844 24.660156 C 26.464844 24.746094 26.851563 24.609375 27.09375 24.3125 L 48 3.4375 L 48 16.40625 C 47.996094 16.765625 48.183594 17.101563 48.496094 17.285156 C 48.808594 17.464844 49.191406 17.464844 49.503906 17.285156 C 49.816406 17.101563 50.003906 16.765625 50 16.40625 L 50 0 L 33.59375 0 C 33.5625 0 33.53125 0 33.5 0 C 33.46875 0 33.4375 0 33.40625 0 Z M 2 10 C 1.476563 10 0.941406 10.183594 0.5625 10.5625 C 0.183594 10.941406 0 11.476563 0 12 L 0 48 C 0 48.523438 0.183594 49.058594 0.5625 49.4375 C 0.941406 49.816406 1.476563 50 2 50 L 38 50 C 38.523438 50 39.058594 49.816406 39.4375 49.4375 C 39.816406 49.058594 40 48.523438 40 48 L 40 18 C 40.003906 17.640625 39.816406 17.304688 39.503906 17.121094 C 39.191406 16.941406 38.808594 16.941406 38.496094 17.121094 C 38.183594 17.304688 37.996094 17.640625 38 18 L 38 48 L 2 48 L 2 12 L 32 12 C 32.359375 12.003906 32.695313 11.816406 32.878906 11.503906 C 33.058594 11.191406 33.058594 10.808594 32.878906 10.496094 C 32.695313 10.183594 32.359375 9.996094 32 10 Z"/>
+								</svg>
+							</a>
 						</div>
 						<div>
 							<h4 class='work__application-title'>Web Application</h4>
 							<h3 class='work__project-title secondary-color'>HomePage</h3>
 						</div>
 					</div>
-					<p class='work__content'>This is a one page web app, designed to be the welcome page to any internet browser. Some key features is a pomodoro timer, customizable design settings and real time weather data. </p>
+					<p class='work__content'>This is a one page web app, designed to be the welcome page to any internet browser. Some key features include a pomodoro timer, customizable design settings, real time weather data and trending news articles. </p>
 					<ul class='work__list'>
 						<li class='work__skill'>React</li>
-						<li class='work__skill'>Open Weather API</li>
-						<li class='work__skill'>Pomodoro Timer</li>
+						<li class='work__skill'>3rd Party API</li>
+						<li class='work__skill'>State Management</li>
 					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id='about-screen' class='about section'>
+			<div class='about__titleContainer'>
+				<h2 class='about__title section-heading'>Background</h2>
+			</div>
+			<div class='about__body first-fade'>
+				<div class='about__content'>
+					<p class='about__text'>Hello! I am Damien Lewinski, a front-end developer based in Melbourne. I recently Graduated from <span class='secondary-color'>Monash University</span> where I studied applied mathematics.<br><br>I enjoy creating websites and applications that live on the web. My goal as a developer is to build attractive and performant products. I love exploring new technologies and advancing my dev skills.</p>
+					<br>
+					<h3 class='about__skills'>Here are my Skills:</h3>
+					<br>
+					<div class='about__listContainer'>
+						<ul class='about_list'>
+							<li class='about__item'>JavaScript (ES6+)</li>
+							<li class='about__item'>HTML & (S)CSS</li>
+							<li class='about__item'>React</li>
+							<li class='about__item'>Figma</li>
+						</ul>
+						<ul class='about_list'>
+							<li class='about__item'>DOM Manipulation</li>
+							<li class='about__item'>Git</li>
+							<li class='about__item'>Chrome Dev Tools</li>
+							<li class='about__item'>Node</li>
+						</ul>
+					</div>
+				</div>
+				<div class='about__imageContainer'>
+					<img class='about__image' src='./images/me.jpg' alt='photo of Damien Lewinski'/>
+					<div class='about__overlay'></div>
 				</div>
 			</div>
 		</section>
@@ -142,7 +158,7 @@
 			<div class='contact__titleContainer'>
 				<h2 class='contact__title section-heading'>Want to know more?</h2>
 			</div>
-			<p class='contact__content first-fade'><span class='secondary-color'>Let's Talk.</span><br>I am currently available for work. If you want to ask me a question or even just to say hello, my inbox is always open.</p>
+			<p class='contact__content first-fade'><span class='secondary-color'>Let's Talk.</span><br>I am currently available for work. If you want to ask me a question or would like to say hello, my inbox is always open.</p>
 			<div class='contact__link-list first-fade'>
 				<a class='contact__link' href='mailto:d.lewinski95@gmail.com' target='_blank'>Email</a>
 				<a class='contact__link' href='https://github.com/damolew19' target='_blank'>Github</a>

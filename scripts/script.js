@@ -56,7 +56,7 @@ const largeScreenNav= document.querySelectorAll('.second-fade');
 let observerFadeUp = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry)
+
         entry.target.classList.add('fade-up');
       }   
     });
@@ -66,7 +66,7 @@ let observerFadeUp = new IntersectionObserver(function (entries, observer) {
 let observerFade = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry)
+
         entry.target.classList.add('fade');
       }   
     });

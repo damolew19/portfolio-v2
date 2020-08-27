@@ -157,15 +157,17 @@ a {
   .home-page__link {
     border-radius: 20px;
     font-size: 18px;
-    border: solid 1.5px;
+    border: solid 1px;
     padding: 1em 2em;
     text-align: center;
-    background: #050014;
-    border-color: #61899A;
-    color: #61899A;
-    transition: all 0.2s ease; }
+    background: inherit;
+    border-color: #7C6EA9;
+    color: #7C6EA9;
+    transition: all 0.3s ease; }
     .home-page__link:hover {
-      background: #61899A50; }
+      background: #7C6EA940;
+      border-color: #7C6EA940;
+      color: #DCD8E8; }
 
 .about__titleContainer {
   display: flex; }
@@ -234,6 +236,10 @@ a {
   width: 28px;
   height: 28px;
   margin-right: 1em; }
+  .work__icon:hover .work__svg-path {
+    fill: #7C6EA9; }
+.work__svg-path {
+  transition: fill 0.1s ease-in; }
 .work__application-title, .work__project-title {
   display: flex;
   justify-content: flex-end; }
