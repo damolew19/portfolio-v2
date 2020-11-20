@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "browser-sync start --server --files '*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damolew19/portfolio-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damolew19/portfolio-v2/issues"
+  },
+  "homepage": "https://github.com/damolew19/portfolio-v2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}

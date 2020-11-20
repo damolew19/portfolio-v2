@@ -80,3 +80,13 @@ homePage.forEach((element, index) => {
 largeScreenNav.forEach(element => {
   setTimeout(() => observerFade.observe(element), 1200) 
 })
+
+//-------- hamburger icon user interaction ----------
+
+function toggleSideBar() {
+  if (document.querySelector('.mobile-screen__button').classList.contains('mobile-screen__opened')) {
+    document.querySelector('.mobile-screen__side-bar').style.transform = 'translateX(0)';
+  } else {
+    document.querySelector('.mobile-screen__side-bar').style.transform = 'translateX(100%)';
+  }
+}
