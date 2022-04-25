@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-posts-first-blog-mdx",
+    "path": "/first-blog/",
+    "result": {"pageContext":{"frontmatter":{"date":"2021-08-12T00:00:00.000Z","title":"Another Blog","description":"Watch out, I'm on a roll!"}}},
+    "staticQueryHashes": ["570812436"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-posts-weekly-review-this-is-my-week-mdx",
+    "path": "/weekly-review/this-is-my-week/",
+    "result": {"pageContext":{"frontmatter":{"title":"This is my week","description":"This has been my week","date":"2022-04-17T00:00:00.000Z"}}},
+    "staticQueryHashes": ["570812436"]}

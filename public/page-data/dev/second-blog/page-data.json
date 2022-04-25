@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-posts-dev-second-blog-mdx",
+    "path": "/dev/second-blog/",
+    "result": {"pageContext":{"frontmatter":{"title":"Second Blog Post","description":"This is the second blog post","date":"2022-04-16T00:00:00.000Z"}}},
+    "staticQueryHashes": ["570812436"]}
