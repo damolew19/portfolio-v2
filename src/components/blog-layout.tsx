@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import Seo from './seo'
+import Seo from './seo';
+import '../styles/global.css';
 // import * as styles from '../styles/styles.module.css'
 
 const BlogLayout = ({

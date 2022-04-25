@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import '../styles/global.css';
+
 import '../styles/portfolio.css';
 import { Portfolio } from '../components/portfolio'
 import { Link } from 'gatsby';
