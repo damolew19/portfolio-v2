@@ -20,7 +20,7 @@
     "eslint": "^7.32.0",
     "gatsby": "^4.11.2",
     "gatsby-plugin-image": "^2.11.1",
-    "gatsby-plugin-mdx": "^3.11.1",
+    "gatsby-plugin-mdx": "^3.15.2",
     "gatsby-plugin-netlify": "^5.0.0",
     "gatsby-plugin-page-creator": "^4.11.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
