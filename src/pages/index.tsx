@@ -102,7 +102,7 @@ function toggleSideBar() {
         <main>
           <section id='home-screen' className='home-page section'>
             <h1 className='home-page__title home-page--main-title first-fade'>Hi, I am Damien.<br /><span className='home-page--sub-heading secondary-color'>I like to build things for the web.</span></h1>
-            <p className='home-page__content first-fade'>I am self-taught developer based in Melbourne, who specializes in developing and designing website.</p>
+            <p className='home-page__content first-fade'>I am self-taught developer based in Melbourne, who specializes in developing and designing websites.</p>
             <div className='home-page__link-wrapper first-fade'>
               <a className='home-page__link' href='#work-screen'>My Projects</a>
             </div>
