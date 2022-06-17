@@ -1,7 +1,7 @@
 
 import React , { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import BlogLayout from '../components/blog-layout';
+import BlogLayout from '../components/BlogLayout';
 
 
 

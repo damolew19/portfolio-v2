@@ -1,10 +1,8 @@
 import React, {useEffect} from "react";
-
 import '../styles/portfolio.css';
-import { Portfolio } from '../components/portfolio'
-import { Link } from 'gatsby';
+import { Portfolio } from '../utils/Portfolio'
 import { StaticImage } from "gatsby-plugin-image"
-import BlogLayout from '../components/blog-layout'
+
 
 
 // markup
@@ -26,7 +24,7 @@ function openMobileNav() {
 //-------- hamburger icon user interaction ----------
 
 function toggleSideBar() {
-  if (document.querySelector('.mobile-screen__button').classList.contains('mobile-screen__opened')) {
+  if (document.querySelector('.mobile-screen__button')?.classList.contains('mobile-screen__opened')) {
     document.querySelector('.mobile-screen__side-bar').style.transform = 'translateX(0)';
   } else {
     document.querySelector('.mobile-screen__side-bar').style.transform = 'translateX(100%)';
@@ -35,7 +33,7 @@ function toggleSideBar() {
   
 
   return (
-    <React.Fragment>
+    <div className='portfolio'>
 
       <header>
 		<div className='large-screen-nav'>
@@ -288,12 +286,11 @@ function toggleSideBar() {
         </footer>
 
 
+    
       
 
-      
 
-
-    </React.Fragment>
+    </div>
   )
 }
 

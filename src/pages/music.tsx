@@ -1,16 +1,16 @@
 
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import BlogLayout from '../components/blog-layout'
+import BlogLayout from '../components/BlogLayout'
 
 
-const WeeklyReview = () => {
+const Music = () => {
 
     const data =  useStaticQuery(graphql`
     query GetWeeklyBlogPosts {
         allMdx(
           sort: {fields: frontmatter___date, order: DESC}
-          filter: {slug: {glob: "weekly-review/*"}}
+          filter: {slug: {glob: "music/*"}}
         ) {
           nodes {
             frontmatter {
@@ -31,7 +31,7 @@ const WeeklyReview = () => {
         
       
     return(
-        <BlogLayout title='Blog - Weekly Review'>
+        <BlogLayout title='Blog - Music'>
            <h1 className='text-4xl sm:text-5xl md:text-6xl py-4'>Weekly Review</h1>
             <hr />
             <ul className='porse'>
@@ -61,4 +61,4 @@ const WeeklyReview = () => {
     )
 }
 
-export default WeeklyReview
+export default Music

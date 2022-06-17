@@ -1,12 +1,17 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import BlogLayout from "./blog-layout";
+import BlogLayout from "./BlogLayout";
 
-export default function PostLayout({ children, pageContext }) {
+export default function PostLayout({ children, pageContext } :
+  {
+    children: any;
+    pageContext: any;
+  }
+  ) {
   const { title, description } = pageContext.frontmatter;
 
   return (
-    <BlogLayout title={title} description={description} å>
+    <BlogLayout title={title} description={description} >
       {children}
       <Link to="/blog">&larr; back</Link>
     </BlogLayout>
