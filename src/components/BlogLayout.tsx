@@ -29,7 +29,6 @@ function openMobileNav() {
     }
   }
 
-
     return (
         <div className='max-w-screen-md mx-4 md:mx-auto my-10'>
             <Seo title={title} description={description} img={img} path={path}/>
@@ -39,14 +38,13 @@ function openMobileNav() {
                     <Link className='mr-2' to='/dev'>Dev</Link>
                     <Link className='mr-2' to='/music'>Music</Link>
                 </nav>
-
                 <div className='mobile-screen block sm:hidden '>
 
                   <div>
                   <a className='mobile-screen__button' 
-                href='./blog'>
-		      DL
-		    </a>
+                          href='./blog'>
+                    DL
+                  </a>
 			<button className='mobile-screen__button' onClick={openMobileNav} aria-label="Main Menu">
 		      <svg className='mobile-screen__svg' width="60" height="60" viewBox="0 0 100 100">
 		        <path className="mobile-screen__line mobile-screen__line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -95,6 +93,7 @@ function openMobileNav() {
             <main className='p-0'>
                 {children}
             </main>
+            <hr className='my-4 hidden sm:block'/>
             <footer className='text-center py-4'>
                 <p>@Damien Lewinski, 2022 | This site was built using Gatsby</p>
             </footer>

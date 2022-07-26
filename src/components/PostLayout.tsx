@@ -13,7 +13,10 @@ export default function PostLayout({ children, pageContext } :
   return (
     <BlogLayout title={title} description={description} >
       {children}
-      <Link to="/blog">&larr; back</Link>
+      <div className='flex justify-end'>
+        <Link  to="/blog">&larr; back</Link>
+      </div>
+      
     </BlogLayout>
   );
 }
